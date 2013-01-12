@@ -5,4 +5,5 @@
 
 ### 参考サイト
 * [漢（オトコ）のコンピュータ道](http://nippondanji.blogspot.jp/)
+* [MySQL で InnoDB、最初にしておけばよかった 7つのこと（ゆめ技: ゆめみスタッフブログ）](http://yumewaza.yumemi.co.jp/2009/08/mysqlinnodb.html)
 
