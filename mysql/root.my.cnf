@@ -1,0 +1,8 @@
+# ATTENTION: This /root/.my.cnf should be readable ONLY
+# for Root !
+
+# chmod 600 /root/.my.cnf
+
+[mysqladmin]
+password = xxxxxxxx
+user = root
