@@ -4,7 +4,6 @@
     daily
         rotate 3
         missingok
-        compress
     postrotate
     # just if mysqld is really running
     if test -x /usr/bin/mysqladmin && \
@@ -21,7 +20,6 @@
     daily
         rotate 3
         missingok
-        compress
     postrotate
     # just if mysqld is really running
     if test -x /usr/bin/mysqladmin && \
@@ -38,7 +36,6 @@
     daily
         rotate 3
         missingok
-        compress
     postrotate
     # just if mysqld is really running
     if test -x /usr/bin/mysqladmin && \
