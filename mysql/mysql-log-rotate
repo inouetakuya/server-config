@@ -5,6 +5,7 @@
         rotate 3
         missingok
         nocompress
+        dateext
     postrotate
     # just if mysqld is really running
     if test -x /usr/bin/mysqladmin && \
@@ -22,6 +23,7 @@
         rotate 3
         missingok
         nocompress
+        dateext
     postrotate
     # just if mysqld is really running
     if test -x /usr/bin/mysqladmin && \
@@ -39,6 +41,7 @@
         rotate 3
         missingok
         nocompress
+        dateext
     postrotate
     # just if mysqld is really running
     if test -x /usr/bin/mysqladmin && \
