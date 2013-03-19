@@ -1,0 +1,50 @@
+/var/log/mysql/error.log {
+        # create 644 mysql mysql
+        notifempty
+    daily
+        rotate 3
+        missingok
+        nocompress
+    postrotate
+    # just if mysqld is really running
+    if test -x /usr/bin/mysqladmin && \
+       /usr/bin/mysqladmin ping &>/dev/null
+    then
+       /usr/bin/mysqladmin flush-logs
+    fi
+    endscript
+}
+ 
+/var/log/mysql/query.log {
+        # create 644 mysql mysql
+        notifempty
+    daily
+        rotate 3
+        missingok
+        nocompress
+    postrotate
+    # just if mysqld is really running
+    if test -x /usr/bin/mysqladmin && \
+       /usr/bin/mysqladmin ping &>/dev/null
+    then
+       /usr/bin/mysqladmin flush-logs
+    fi
+    endscript
+}
+ 
+/var/log/mysql/slow.log {
+        # create 644 mysql mysql
+        notifempty
+    daily
+        rotate 3
+        missingok
+        nocompress
+    postrotate
+    # just if mysqld is really running
+    if test -x /usr/bin/mysqladmin && \
+       /usr/bin/mysqladmin ping &>/dev/null
+    then
+       /usr/bin/mysqladmin flush-logs
+    fi
+    endscript
+}
