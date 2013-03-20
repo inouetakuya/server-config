@@ -1,10 +1,12 @@
 /var/log/mysql/error.log /var/log/mysql/query.log /var/log/mysql/slow.log {
-        # create 644 mysql mysql
+        create 644 mysql mysql
         notifempty
     daily
-        rotate 3
+        rotate 14
         missingok
         nocompress
+        dateext
+        sharedscripts
     postrotate
     # just if mysqld is really running
     if test -x /usr/bin/mysqladmin && \
