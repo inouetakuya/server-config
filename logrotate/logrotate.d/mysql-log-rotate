@@ -2,7 +2,7 @@
         create 644 mysql mysql
         notifempty
     daily
-        rotate 3
+        rotate 14
         missingok
         nocompress
     postrotate
