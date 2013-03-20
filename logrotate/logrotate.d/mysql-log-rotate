@@ -5,6 +5,7 @@
         rotate 14
         missingok
         nocompress
+        dateext
     postrotate
     # just if mysqld is really running
     if test -x /usr/bin/mysqladmin && \
