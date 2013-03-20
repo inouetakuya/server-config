@@ -1,5 +1,5 @@
 /var/log/mysql/error.log /var/log/mysql/query.log /var/log/mysql/slow.log {
-        # create 644 mysql mysql
+        create 644 mysql mysql
         notifempty
     daily
         rotate 3
