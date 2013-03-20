@@ -6,6 +6,7 @@
         missingok
         nocompress
         dateext
+        sharedscripts
     postrotate
     # just if mysqld is really running
     if test -x /usr/bin/mysqladmin && \
