@@ -1,0 +1,8 @@
+/var/log/logrotate {
+    notifempty
+    weekly
+    rotate 4
+    missingok
+    nocompress
+    dateext
+}
