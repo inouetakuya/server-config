@@ -12,7 +12,7 @@
     if test -x /usr/bin/mysqladmin && \
        /usr/bin/mysqladmin ping &>/dev/null
     then
-       /usr/bin/mysqladmin flush-logs
+       /usr/bin/mysqladmin --defaults-extra-file=/root/.my.cnf flush-logs
     fi
     endscript
 }
